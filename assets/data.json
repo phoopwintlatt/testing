@@ -1,0 +1,22 @@
+[
+  {
+
+    "name" : "Phoo Pwint Latt",
+    "Husband" : "Zayar Htet",
+    "age" : 20,
+    "single" : false,
+    "address" : {
+      "no" : 2,
+      "street" : "Egyeten Sugarut",
+      "building" : "54A"
+    }
+  },
+  {
+
+    "name" : "Miyuki",
+    "Husband" : "chen",
+    "age" : 10,
+    "single" : true,
+    "address" : null
+  }
+]
