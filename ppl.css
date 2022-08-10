@@ -60,7 +60,7 @@ body {
 header{
   background-color : #fff;
   width : 100%;
-  height : 100px;
+  height : 90px;
 
 }
 
@@ -93,10 +93,44 @@ header nav ul li a {
   font-family : Catamaran;
   font-size : 16px;
   color : #111;
+  text-transform: uppercase;
 }
 
 header .header-cases{
   display: none;
+}
+
+@media only screen and (min-width: 1000px){
+  header .header-brand{
+    margin : 30px 0;
+    text-align : left;
+    padding : 0px 20px 0 40px;
+    border-right :3px solid #111;
+    float : left;
+    line-height : 38px;
+  }
+
+  header nav ul {
+    float : left;
+    margin : 20px 40px;
+  }
+  
+  header nav ul li a {
+    line-height : 60px;
+  }
+
+  header .header-cases{
+    display: block;
+    font-family : Catamaran;
+    font-size : 16px;
+    color : #111;
+    text-transform: uppercase;
+    line-height : 24px;
+    border: 1px solid #111;
+    float : right;
+    margin : 34px 40px;
+    padding: 8px 20px;
+  }
 }
 
 /*index*/
@@ -110,7 +144,7 @@ main{
 
 .index-banner {
   width : 100%;
-  height :calc(100vh - 100px) ;
+  height :calc(100vh - 5px) ;
   background-image : url('assets/img/header-banner.jpg');
   background-repeat : no-repeat;
   background-position : center;
@@ -136,7 +170,7 @@ main{
 .index-banner h1 {
   font-family : Catamaran;
   font-size : 28px;
-  font-weight : 100;
+  font-weight : 200;
   font-style: italic;
   line-height :40px;
   color : #fff;
@@ -162,18 +196,63 @@ main{
   text-transform : uppercase;
 }
 
+@media only screen and (min-width: 1000px){
+
+  .wrapper{
+    width : 1000px;
+    margin : 0 auto;
+
+  }
+
+  .index-banner {
+    width : 100%;
+    height : 500px ;
+    display: table;
+  }
+  
+  .index-banner h1 {
+    display: block;
+    width : 560px;
+    margin : 0 auto;
+  }
+
+  .index-links{
+    overflow : hidden;
+  }
+
+  .index-links div{
+    margin : 20px 10px 0;
+    height : 230px;
+    background-color : #ccc4c4;
+    float : left;
+  }
+
+  .index-boxlink-square{
+    width: calc(25% - 20px) !important;
+  }
+
+  .index-boxlink-rectangle{
+    width : calc(50% - 20px) !important;
+  }
+
+  .index-links div h3 {
+    line-height: 230px;
+  }
+}
+
 /*footer*/
 footer {
   width : calc(100% - 80px) ;
   height : 100%;
   padding : 40px 40px;
-  background-color : #111;
+  background-color : rgb(97, 95, 95);
+  overflow : hidden;
 }
 
 footer ul {
   width : fit-content;
   float : left;
-  padding-left : 20px;
+  padding : 10px 20px;
 
 }
 
@@ -185,13 +264,35 @@ footer ul li {
 
 footer ul li a {
   font-family : Catamaran;
-  font-size : 14px;
+  font-size : 20px;
   color : #fff;
+  line-height : 30px;
+  text-transform: uppercase;
 
 }
-footer ul {
-  width : fit-content;
-  float : left;
-  padding-left : 20px;
 
+.footer-links-cases {
+  display : none ;
+}
+
+.footer-sm {
+  width : 40px;
+  float : right;
+
+}
+
+.footer-sm img{
+  width : 100%;
+  
+}
+
+@media only screen and (min-width: 1000px){
+  .footer-links-cases {
+    display : block ;
+  }
+
+  footer ul{
+    padding-right: 30px;
+  }
+  
 }
