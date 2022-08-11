@@ -58,6 +58,10 @@ body {
 }
 
 header{
+  position: fixed;
+  top: 0;
+  right : 0;
+  left : 0;
   background-color : #fff;
   width : 100%;
   height : 90px;
@@ -138,8 +142,8 @@ header .header-cases{
 main{
   width : 100%;
   height : auto;
-  background-color : #fff;
-  padding : 20px 0;
+  background-color : rgb(255, 255, 255);
+  padding-top: 90px;
 }
 
 .index-banner {
@@ -240,6 +244,75 @@ main{
   }
 }
 
+/*cases*/
+
+.cases-link {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.cases-links h2{
+  font-family : Catamaran;
+  font-size : 28px;
+  font-weight : bold;
+  text-transform : uppercase;
+}
+
+
+.cases-links .cases-link {
+  float: left;
+  width : 230px;
+  height : 230px;
+  margin: 20px 10px 10px;
+  background-color: #eeafaf;
+}
+
+.cases-links .cases-link p{
+  padding-top: 45%;
+  font-family : Catamaran;
+  font-size : 28px;
+  font-weight : bold;
+  color: #111;
+  text-align: center;
+  text-transform : uppercase;
+}
+
+/*case1*/
+.case-vid h2{
+  padding-top: 20px;
+  text-align: center;
+  font-family : Catamaran;
+  font-size : 28px;
+  font-weight : bold;
+  text-transform : uppercase;
+}
+
+.case-vid video{
+  display: block;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.case-vid article h3{
+  font-family : Catamaran;
+  font-size : 28px;
+  font-weight : bold;
+  color: #111;
+  text-transform : uppercase;
+  padding-bottom: 20px;
+}
+
+.case-vid article div p{
+  font-family : Catamaran;
+  font-size : 14px;
+  line-height: 24px;
+  color: #111;
+  padding-bottom: 20px;
+  column-count: 3;
+  column-gap: 30px;
+
+}
+
 /*footer*/
 footer {
   width : calc(100% - 80px) ;
@@ -266,7 +339,7 @@ footer ul li a {
   font-family : Catamaran;
   font-size : 20px;
   color : #fff;
-  line-height : 30px;
+  line-height : 40px;
   text-transform: uppercase;
 
 }
@@ -295,4 +368,42 @@ footer ul li a {
     padding-right: 30px;
   }
   
+}
+
+/*Gallery*/
+
+.gallery-links-h2 {
+
+  font-family : Catamaran;
+  font-size : 28px;
+  font-weight: bold;
+  color : #111;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-links{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.gallery-img{
+  flex-basis: 90% ;
+}
+
+.gallery-img img{
+  width: 100%;
+}
+
+@media only screen and (min-width: 762px){
+  .gallery-links-h2{
+    font-size: 28px;
+  }
+
+  .gallery-img{
+    flex-basis: 300px ;
+    margin: 10px;
+  }
 }
